@@ -17,7 +17,10 @@ class Solution:
                 localSol.pop()
 
         finalAns = []
-        goDownTree([], finalAns)
+        for x in nums:
+            sol = [x]
+            goDownTree(sol, finalAns)
+            sol.pop()
         
         return finalAns
             
