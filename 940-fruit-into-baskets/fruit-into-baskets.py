@@ -1,5 +1,3 @@
-from collections import defaultdict
-
 class Solution:
     def totalFruit(self, fruits: List[int]) -> int:
         fruit_count = defaultdict(int)
