@@ -2,12 +2,12 @@ class Solution:
     def numOfUnplacedFruits(self, fruits: List[int], baskets: List[int]) -> int:
         c = 0
         for i in fruits:
-            isP = False
+            iP = False
             for j in baskets:
                 if j>=i:
-                    isP = True
+                    iP = True
                     baskets.remove(j)
                     break
-            if not isP:
+            if not iP:
                 c += 1
         return c
