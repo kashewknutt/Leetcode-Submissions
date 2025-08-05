@@ -1,6 +1,6 @@
 class Solution:
     def numOfUnplacedFruits(self, fruits: List[int], baskets: List[int]) -> int:
-        count = 0
+        c = 0
         for i in fruits:
             isP = False
             for j in baskets:
@@ -9,5 +9,5 @@ class Solution:
                     baskets.remove(j)
                     break
             if not isP:
-                count += 1
-        return count
+                c += 1
+        return c
