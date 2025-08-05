@@ -1,5 +1,5 @@
 class Solution:
-    def numOfUnplacedFruits(self, fruits: List[int], baskets: List[int]) -> int:
+    def numOfUnplacedFruits(self, fruits, baskets):
         c = 0
         for i in fruits:
             iP = False
