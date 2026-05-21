@@ -9,11 +9,11 @@ class Solution:
         if not root:
             return True
         return self.isSame(root.left,root.right)
-    def isSame(self,root1,root2):
-        if not root1 and not root2:
+    def isSame(self,r1,r2):
+        if not r1 and not r2:
             return True
-        if not root1 or not root2:
+        if not r1 or not r2:
             return False
-        if root1.val != root2.val:
+        if r1.val != r2.val:
             return False
-        return self.isSame(root1.left,root2.right) and self.isSame(root1.right,root2.left)
+        return self.isSame(r1.left,r2.right) and self.isSame(r1.right,r2.left)
