@@ -5,6 +5,5 @@ class Solution:
         for n in A:
             mins = min(mins, n)
             maxs = max(maxs, n)
-            print(mins,maxs)
 
         return (maxs - mins) * k
