@@ -4,7 +4,7 @@ class Solution:
         dis = [[-1] * n for _ in range(m)]
         dirs = [(0, 1), (1, 0), (-1, 0), (0, -1)]
 
-        pq = [(grid[0][0], 0, 0)]  # (cost, x, y)
+        pq = [(grid[0][0], 0, 0)]
         while pq:
             val, cx, cy = heapq.heappop(pq)
             if dis[cx][cy] >= 0:
